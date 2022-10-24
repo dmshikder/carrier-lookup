@@ -10,4 +10,50 @@ body {
   flex-direction: row;
   justify-content: end;
   gap: 15px;
+  width: 1696px;
+  height: 90px;
+}
+
+/* left navbar  */
+
+.left-nav {
+  background-color: black;
+  color: white;
+  width: 224px;
+  height: 1189px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -75px;
+}
+
+.logo {
+  width: 42.47px;
+  height: 42.47px;
+  margin-left: 40px;
+}
+
+.logo-title {
+  width: 124.47px;
+  height: 11.19px;
+}
+
+.logo-detail {
+  width: 100.37px;
+  height: 3.93px;
+  font-size: 6px;
+  text-align: end;
+  color: #7d7d7e;
+}
+
+.left-nav-items > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 22px;
+  color: #7d7d7e;
+}
+.left-nav-items > div > img {
+  width: 16px;
+  height: 16px;
 }
