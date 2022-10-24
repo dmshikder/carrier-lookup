@@ -58,7 +58,7 @@
 
     <!-- main body start -->
 
-    <div>
+    <div class="main-body-part">
       <div class="personal-info">
         <div class="profile-info">
           <img src="/assets/profile-image.png" alt="" />
@@ -109,16 +109,78 @@
       </div>
 
       <!-- main body 2nd part  -->
-      <div>
-        <div>
+      <div class="setings">
+        <div class="setings-menu-bar">
           <ul class="menu">
             <li>Update Profile</li>
             <li>Change Password</li>
-            <li>Email Notification</li>
+            <li class="email">Email Notification</li>
             <li>Auto Recharge Settings</li>
           </ul>
+          <!-- <hr /> -->
         </div>
-        <div>notify</div>
+        <div>
+          <div class="toggole-settings">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+
+            <p>Notify me when list verification completes</p>
+          </div>
+          <div class="toggole-settings">
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+            <p>Notify me when list export completes</p>
+          </div>
+          <div class="toggole-settings">
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+            <p>Notify me when list verification result is about to expire</p>
+          </div>
+          <hr class="hr" />
+          <div>
+            <div class="toggole-settings">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider round"></span>
+              </label>
+              <p>Receive Low Credits Email</p>
+            </div>
+            <div class="submit-form">
+              <div>
+                <p>Send Email to <span class="mendatory">*</span></p>
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="enter your email"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div>
+                <p>
+                  When credits are less than <span class="mendatory">*</span>
+                </p>
+                <input
+                  class="input"
+                  type="number"
+                  placeholder="write ammount"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <hr class="hr" />
+
+          <button class="button">Save Changes</button>
+        </div>
       </div>
     </div>
     <!-- main body end -->
