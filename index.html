@@ -5,14 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Carrier Lookup</title>
   </head>
   <body>
     <!-- navbar  start -->
-    <div class="nav-top">
-      <div><p>Balance: $125</p></div>
-      <div><p>dropdown menu</p></div>
+    <div class="navbar-top-bg">
+      <div>
+        <div class="nav-top-item">
+          <div class="nav-top-balance">
+            <p>Balance:</p>
+            <p class="amount">$125</p>
+          </div>
+          <div class="profile">
+            <div class="menu" onclick="toggleMenu()">
+              <img class="profile-img" src="/assets/profile-image.png" alt="" />
+              <p class="user-name">Alexa Jui</p>
+              <svg
+                width="14"
+                height="8"
+                viewBox="0 0 14 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L6.29289 6.29289C6.68342 6.68342 7.31658 6.68342 7.70711 6.29289L13 1"
+                  stroke="#7D7D7E"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="sub-menu-wrap" id="subMenu">
+              <div>
+                <a href="#" class="sub-menu-profile">My Profile</a>
+                <a href="#">Add Fund</a>
+                <a href="#">API Documentation</a>
+                <a href="#" style="margin-bottom: 20px">Log Out</a>
+                <button class="logout-btn">
+                  <img src="/assets/logout.png" alt="" /><span
+                    style="color: #ff5e5e; font-size: 16px"
+                    >Log out</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <!-- navbar  end -->
 
     <!-- left-side navbar start -->
@@ -24,34 +65,53 @@
       </div>
       <div class="left-nav-items">
         <div>
-          <img src="/assets/dashboard.png" alt="" />
-          <p>Dashboard</p>
+          <a href="#"><img src="/assets/dashboard.png" alt="" /> Dashboard</a>
         </div>
         <div>
-          <img src="/assets/search.png" alt="" />
-          <p>Lookup</p>
+          <a href="#"><img src="/assets/search.png" alt="" /> Lookup</a>
         </div>
         <div>
-          <img src="/assets/files.png" alt="" />
-          <p>Files</p>
+          <a href="#"><img src="/assets/files.png" alt="" /> Files</a>
+        </div>
+
+        <div class="subnav">
+          <a class="subnavbtn" href="#"
+            ><img src="/assets/logs.png" alt="" /> Logs</a
+          >
+
+          <div class="subnav-content">
+            <a href="#"
+              ><img src="/assets/bulk.png" alt="" /> Single/Bulk Lookup</a
+            >
+            <a href="#"
+              ><img src="/assets/dailyUser.png" alt="" /> Daily Usages</a
+            >
+          </div>
+        </div>
+
+        <!-- test  -->
+
+        <div>
+          <a href="#"
+            ><img src="/assets/buycredits.png" alt="" /> Buy Credits</a
+          >
+        </div>
+
+        <!-- test end  -->
+
+        <div>
+          <a href="#"
+            ><img src="/assets/integrations.png" alt="" /> Integrations</a
+          >
         </div>
         <div>
-          <img src="/assets/logs.png" alt="" />
-          <p>Logs</p>
-        </div>
-        <div>
-          <img src="/assets/buycredits.png" alt="" />
-          <p>Buy Credits</p>
-        </div>
-        <div>
-          <img src="/assets/integrations.png" alt="" />
-          <p>Integrations</p>
-        </div>
-        <div>
-          <img src="/assets/user.png" alt="" />
-          <p style="color: white">My Profile</p>
+          <a href="#"><img src="/assets/user.png" alt="" /> My Profile</a>
         </div>
       </div>
+
+      <!-- left nav change start  -->
+
+      <!-- left nav change end  -->
     </div>
 
     <!-- left-side navbar end -->
@@ -111,7 +171,7 @@
       <!-- main body 2nd part  -->
       <div class="setings">
         <div class="setings-menu-bar">
-          <ul class="menu">
+          <ul class="menu-settings">
             <li>Update Profile</li>
             <li>Change Password</li>
             <li class="email">Email Notification</li>

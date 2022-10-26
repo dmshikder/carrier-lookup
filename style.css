@@ -3,19 +3,161 @@ body {
   margin-top: 0;
 }
 
-.nav-top {
+/* top nav start  */
+
+.navbar-top-bg {
   background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  gap: 15px;
-  width: 1696px;
+  /* padding-top: 15px; */
+  /* padding-bottom: 15px; */
+  padding-right: 30px;
   height: 90px;
-  margin-left: 220px;
+  width: 1696px;
 }
 
+.nav-top-item {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+}
+
+.nav-top-balance {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.amount {
+  font-size: 30px;
+  color: #ff7901;
+}
+
+.menu {
+  background-color: #ffffff;
+  display: flex;
+
+  width: 200px;
+  height: 60px;
+  border-radius: 45px;
+  position: relative;
+  z-index: 20;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 20px;
+  margin-right: 18px;
+}
+
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  width: 198px;
+  margin-top: -860px;
+  margin-right: -40px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+  background-color: #ffffff;
+  border: 1px solid #f2f2f4;
+  box-shadow: 0px 30px 20px -20px rgba(198, 211, 232, 0.2);
+  border-radius: 10px;
+}
+
+.sub-menu-wrap a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #7d7d7e;
+  font-size: 14px;
+  gap: 10px;
+  line-height: 30px;
+  margin-left: 20px;
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 297px;
+  z-index: 10;
+}
+
+.sub-menu-profile {
+  margin-top: 60px;
+}
+
+.logout-btn {
+  width: 160px;
+  height: 48px;
+  background-color: rgba(255, 1, 1, 0.1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9.25px;
+  border: none;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* top nav end  */
+
 /* left navbar  */
+
+/* test  */
+
+.subnav {
+  display: flex;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 14px;
+}
+
+.subnav:hover .subnavbtn {
+  width: 170px;
+  height: 60px;
+}
+
+.subnav-content {
+  display: none;
+
+  position: absolute;
+  left: 0;
+  width: 190px;
+  margin-left: 60px;
+  z-index: 1;
+  margin-top: 60px;
+  gap: 20px;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* test end */
 
 .left-nav {
   background-color: black;
@@ -32,6 +174,7 @@ body {
   width: 42.47px;
   height: 42.47px;
   margin-left: 40px;
+  margin-top: 11px;
 }
 
 .logo-title {
@@ -47,6 +190,12 @@ body {
   color: #7d7d7e;
 }
 
+.left-nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .left-nav-items > div {
   display: flex;
   flex-direction: row;
@@ -57,6 +206,11 @@ body {
 .left-nav-items > div > img {
   width: 16px;
   height: 16px;
+}
+
+.left-nav-items > div a {
+  text-decoration: none;
+  color: #7d7d7e;
 }
 
 /* main body  */
@@ -178,7 +332,7 @@ body {
   margin-bottom: 53px;
 }
 
-.menu {
+.menu-settings {
   list-style-type: none;
   display: flex;
   align-items: center;
